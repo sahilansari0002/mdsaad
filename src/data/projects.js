@@ -1,0 +1,165 @@
+// Dynamic video projects configuration for Mohammad Saad's portfolio
+// All video links use reliable HTML5 public video samples or streaming media placeholders
+
+export const categories = [
+  "All",
+  "Reels",
+  "Social Media",
+  "YouTube",
+  "Motion Graphics",
+  "Promotional"
+];
+
+export const projects = [
+  {
+    id: "proj-01",
+    title: "High-Paced Viral Tech Reel",
+    category: "Reels",
+    aspectRatio: "9:16", // vertical
+    duration: "0:38",
+    description: "Fast cuts, sound design sync, kinetic text animation, and color grading tuned for high audience retention on Instagram & TikTok.",
+    thumbnail: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=800&q=80",
+    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+    featured: true,
+    tags: ["CapCut", "Sound Design", "Kinetic Text"]
+  },
+  {
+    id: "proj-02",
+    title: "Cinematic Brand Commercial",
+    category: "Promotional",
+    aspectRatio: "16:9", // landscape
+    duration: "1:15",
+    description: "Multi-cam timeline edit with custom LUTS, speed ramps, and seamless invisible transitions for an urban lifestyle brand.",
+    thumbnail: "https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=800&q=80",
+    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+    featured: true,
+    tags: ["Premiere Pro", "Color Grading", "Multi-Cam"]
+  },
+  {
+    id: "proj-03",
+    title: "3D Motion Graphics & Intro",
+    category: "Motion Graphics",
+    aspectRatio: "16:9",
+    duration: "0:24",
+    description: "Complex After Effects compositing, shape layer keyframing, 3D camera tracking, and custom particle glow dynamics.",
+    thumbnail: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80",
+    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+    featured: true,
+    tags: ["After Effects", "3D Camera", "VFX"]
+  },
+  {
+    id: "proj-04",
+    title: "Short-Form Creator Story",
+    category: "Social Media",
+    aspectRatio: "9:16",
+    duration: "0:45",
+    description: "Engaging talking-head editing style with pop-up graphics, sound effects, B-roll overlays, and zoom punches.",
+    thumbnail: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+    featured: false,
+    tags: ["CapCut", "Talking Head", "Pop-ups"]
+  },
+  {
+    id: "proj-05",
+    title: "YouTube Documentary Edit",
+    category: "YouTube",
+    aspectRatio: "16:9",
+    duration: "2:40",
+    description: "Pacing-focused documentary edit with archival footage matching, audio ducking, subtitle styling, and emotional narrative arc.",
+    thumbnail: "https://images.unsplash.com/photo-1518173946687-a4c8a383392e?auto=format&fit=crop&w=800&q=80",
+    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+    featured: false,
+    tags: ["Premiere Pro", "Documentary", "Audio Ducking"]
+  },
+  {
+    id: "proj-06",
+    title: "Fitness Motivation Reel",
+    category: "Reels",
+    aspectRatio: "9:16",
+    duration: "0:29",
+    description: "Rhythm-matched bass drop edits, flash transitions, speed ramping, and dramatic audio mixing for max energy.",
+    thumbnail: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80",
+    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+    featured: false,
+    tags: ["CapCut", "Speed Ramps", "High Energy"]
+  },
+  {
+    id: "proj-07",
+    title: "Product Launch Showcase",
+    category: "Promotional",
+    aspectRatio: "1:1", // square
+    duration: "0:50",
+    description: "Clean product callouts, animated text highlights, macro shot stabilization, and sleek minimal aesthetics.",
+    thumbnail: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80",
+    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+    featured: false,
+    tags: ["After Effects", "Product Edit", "Square Format"]
+  },
+  {
+    id: "proj-08",
+    title: "Podcast Highlights Snippet",
+    category: "Social Media",
+    aspectRatio: "9:16",
+    duration: "0:58",
+    description: "Dual-speaker layout framing, wave-form visualizations, subtitle captions, and key point highlight markers.",
+    thumbnail: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=800&q=80",
+    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
+    featured: false,
+    tags: ["Premiere Pro", "Subtitles", "Podcast"]
+  },
+  {
+    id: "proj-09",
+    title: "Kinetic Typography Promo",
+    category: "Motion Graphics",
+    aspectRatio: "16:9",
+    duration: "0:30",
+    description: "Stylized typography animation synced frame-by-frame to fast voiceover track with liquid motion transitions.",
+    thumbnail: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+    featured: false,
+    tags: ["After Effects", "Kinetic Type", "Sync"]
+  },
+  {
+    id: "proj-10",
+    title: "Gaming Montage & VFX Highlights",
+    category: "YouTube",
+    aspectRatio: "16:9",
+    duration: "1:20",
+    description: "Frame blending, velocity editing, screen shake FX, killfeed syncs, and custom glowing impact overlays.",
+    thumbnail: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80",
+    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutback2012.mp4",
+    featured: false,
+    tags: ["After Effects", "Velocity", "VFX Highlights"]
+  },
+  {
+    id: "proj-11",
+    title: "Fashion & Lifestyle Aesthetic Reel",
+    category: "Reels",
+    aspectRatio: "9:16",
+    duration: "0:35",
+    description: "Soft grain texture, film burn overlays, warm color palette, and rhythmic jump cuts for a premium boutique brand.",
+    thumbnail: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80",
+    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4",
+    featured: false,
+    tags: ["CapCut", "Film Grain", "Aesthetic"]
+  },
+  {
+    id: "proj-12",
+    title: "Corporate Event Aftermovie",
+    category: "Promotional",
+    aspectRatio: "16:9",
+    duration: "1:45",
+    description: "Comprehensive event coverage edit with speech audio integration, ambient background music, and crowd engagement shots.",
+    thumbnail: "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80",
+    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4",
+    featured: false,
+    tags: ["Premiere Pro", "Aftermovie", "Audio Mix"]
+  }
+];
+
+export const showreelVideo = {
+  title: "Mohammad Saad 2026 Showreel",
+  subtitle: "A compilation of short-form edits, motion graphics, and storytelling cuts.",
+  poster: "https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=1600&q=80",
+  videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+};
