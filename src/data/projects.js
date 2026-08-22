@@ -19,7 +19,7 @@ export const projects = [
     duration: "0:38",
     description: "Fast cuts, sound design sync, kinetic text animation, and color grading tuned for high audience retention on Instagram & TikTok.",
     thumbnail: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=800&q=80",
-    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+    videoUrl: "public/Hk video 2.mp4",
     featured: true,
     tags: ["CapCut", "Sound Design", "Kinetic Text"]
   },
@@ -31,7 +31,7 @@ export const projects = [
     duration: "1:15",
     description: "Multi-cam timeline edit with custom LUTS, speed ramps, and seamless invisible transitions for an urban lifestyle brand.",
     thumbnail: "https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=800&q=80",
-    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+    videoUrl: "public/Hk video 3.mp4",
     featured: true,
     tags: ["Premiere Pro", "Color Grading", "Multi-Cam"]
   },
@@ -43,7 +43,7 @@ export const projects = [
     duration: "0:24",
     description: "Complex After Effects compositing, shape layer keyframing, 3D camera tracking, and custom particle glow dynamics.",
     thumbnail: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80",
-    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+    videoUrl: "public/Hk video 4.mp4",
     featured: true,
     tags: ["After Effects", "3D Camera", "VFX"]
   },
@@ -55,7 +55,7 @@ export const projects = [
     duration: "0:45",
     description: "Engaging talking-head editing style with pop-up graphics, sound effects, B-roll overlays, and zoom punches.",
     thumbnail: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
-    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+    videoUrl: "public/Hk video 5.mp4",
     featured: false,
     tags: ["CapCut", "Talking Head", "Pop-ups"]
   },
@@ -67,7 +67,7 @@ export const projects = [
     duration: "2:40",
     description: "Pacing-focused documentary edit with archival footage matching, audio ducking, subtitle styling, and emotional narrative arc.",
     thumbnail: "https://images.unsplash.com/photo-1518173946687-a4c8a383392e?auto=format&fit=crop&w=800&q=80",
-    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+    videoUrl: "public/Hk video 6.mp4",
     featured: false,
     tags: ["Premiere Pro", "Documentary", "Audio Ducking"]
   },
