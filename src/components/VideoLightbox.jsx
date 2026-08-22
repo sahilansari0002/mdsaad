@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Play, Pause, Volume2, VolumeX, Maximize2, Tag } from 'lucide-react';
+import { X, Play, Pause, Volume2, VolumeX, Tag, ExternalLink } from 'lucide-react';
 import { useLightbox } from '../context/LightboxContext';
+import { parseVideoUrl } from '../utils/videoHelper';
 
 export default function VideoLightbox() {
   const { activeProject, closeLightbox } = useLightbox();
@@ -28,6 +29,8 @@ export default function VideoLightbox() {
   }, [activeProject]);
 
   if (!activeProject) return null;
+
+  const videoParsed = parseVideoUrl(activeProject.videoUrl);
 
   const togglePlay = () => {
     if (!videoRef.current) return;
@@ -86,61 +89,96 @@ export default function VideoLightbox() {
 
           {/* Video Container */}
           <div className={`relative bg-black flex items-center justify-center ${isVertical ? 'aspect-[9/16] max-h-[65vh]' : 'aspect-video'}`}>
-            <video
-              ref={videoRef}
-              src={activeProject.videoUrl}
-              poster={activeProject.thumbnail}
-              onTimeUpdate={handleTimeUpdate}
-              onEnded={() => setIsPlaying(false)}
-              autoPlay
-              playsInline
-              className="w-full h-full object-contain"
-            />
+            {videoParsed.isGoogleDrive ? (
+              /* Google Drive Embed Player */
+              <iframe
+                src={videoParsed.embedUrl}
+                className="w-full h-full border-0 rounded-t-2xl"
+                allow="autoplay; encrypted-media; fullscreen"
+                allowFullScreen
+                title={activeProject.title}
+              />
+            ) : (
+              /* Standard HTML5 Video Player */
+              <>
+                <video
+                  ref={videoRef}
+                  src={activeProject.videoUrl}
+                  poster={activeProject.thumbnail}
+                  onTimeUpdate={handleTimeUpdate}
+                  onEnded={() => setIsPlaying(false)}
+                  autoPlay
+                  playsInline
+                  className="w-full h-full object-contain"
+                />
 
-            {/* Big Play Overlay when Paused */}
-            {!isPlaying && (
-              <div 
-                onClick={togglePlay}
-                className="absolute inset-0 bg-black/40 flex items-center justify-center cursor-pointer"
-              >
-                <div className="w-16 h-16 rounded-full bg-brand-amber text-black flex items-center justify-center shadow-glow-amber">
-                  <Play className="w-7 h-7 fill-current ml-1" />
-                </div>
-              </div>
+                {/* Big Play Overlay when Paused */}
+                {!isPlaying && (
+                  <div 
+                    onClick={togglePlay}
+                    className="absolute inset-0 bg-black/40 flex items-center justify-center cursor-pointer"
+                  >
+                    <div className="w-16 h-16 rounded-full bg-brand-amber text-black flex items-center justify-center shadow-glow-amber">
+                      <Play className="w-7 h-7 fill-current ml-1" />
+                    </div>
+                  </div>
+                )}
+              </>
             )}
           </div>
 
           {/* Controls Bar & Video Info */}
           <div className="bg-dark-surface p-4 sm:p-5 flex flex-col gap-3">
-            {/* Timeline Progress */}
-            <div className="w-full h-1.5 bg-dark-bg rounded-full overflow-hidden cursor-pointer">
-              <div 
-                className="h-full bg-brand-amber transition-all duration-100" 
-                style={{ width: `${progress}%` }} 
-              />
-            </div>
+            {!videoParsed.isGoogleDrive && (
+              /* Timeline Progress for standard videos */
+              <div className="w-full h-1.5 bg-dark-bg rounded-full overflow-hidden cursor-pointer">
+                <div 
+                  className="h-full bg-brand-amber transition-all duration-100" 
+                  style={{ width: `${progress}%` }} 
+                />
+              </div>
+            )}
 
             {/* Video Controls & Title Header */}
             <div className="flex items-center justify-between font-mono text-xs text-white">
-              <div className="flex items-center gap-3">
-                <button
-                  onClick={togglePlay}
-                  className="p-1.5 rounded-lg bg-dark-card hover:bg-dark-border text-brand-amber transition-colors"
-                >
-                  {isPlaying ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4 fill-current" />}
-                </button>
-                <button
-                  onClick={toggleMute}
-                  className="p-1.5 rounded-lg bg-dark-card hover:bg-dark-border text-dark-muted hover:text-white transition-colors"
-                >
-                  {isMuted ? <VolumeX className="w-4 h-4 text-brand-red" /> : <Volume2 className="w-4 h-4" />}
-                </button>
-              </div>
+              {!videoParsed.isGoogleDrive ? (
+                <div className="flex items-center gap-3">
+                  <button
+                    onClick={togglePlay}
+                    className="p-1.5 rounded-lg bg-dark-card hover:bg-dark-border text-brand-amber transition-colors"
+                  >
+                    {isPlaying ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4 fill-current" />}
+                  </button>
+                  <button
+                    onClick={toggleMute}
+                    className="p-1.5 rounded-lg bg-dark-card hover:bg-dark-border text-dark-muted hover:text-white transition-colors"
+                  >
+                    {isMuted ? <VolumeX className="w-4 h-4 text-brand-red" /> : <Volume2 className="w-4 h-4" />}
+                  </button>
+                </div>
+              ) : (
+                <div className="flex items-center gap-2 text-brand-amber font-mono text-[11px]">
+                  <span>GOOGLE DRIVE STREAM</span>
+                </div>
+              )}
 
               {/* Title & Category Info */}
-              <div className="text-right">
+              <div className="text-right flex flex-col items-end gap-1">
                 <div className="font-bold text-white font-sans text-sm">{activeProject.title}</div>
-                <div className="text-[10px] text-brand-amber">{activeProject.category} • {activeProject.duration}</div>
+                <div className="flex items-center gap-2">
+                  {videoParsed.isGoogleDrive && (
+                    <a
+                      href={videoParsed.viewUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1 text-[10px] text-brand-amber hover:underline bg-brand-amber/10 px-2 py-0.5 rounded border border-brand-amber/30"
+                    >
+                      <span>Open in Drive</span>
+                      <ExternalLink className="w-3 h-3" />
+                    </a>
+                  )}
+                  <span className="text-[10px] text-brand-amber">{activeProject.category} • {activeProject.duration}</span>
+                </div>
               </div>
             </div>
 
