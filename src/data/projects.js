@@ -19,7 +19,7 @@ export const projects = [
     duration: "0:38",
     description: "Fast cuts, sound design sync, kinetic text animation, and color grading tuned for high audience retention on Instagram & TikTok.",
     thumbnail: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=800&q=80",
-    videoUrl: "public/Hk video 2.mp4",
+    videoUrl: "public/hk2.mp4",
     featured: true,
     tags: ["CapCut", "Sound Design", "Kinetic Text"]
   },
@@ -31,7 +31,7 @@ export const projects = [
     duration: "1:15",
     description: "Multi-cam timeline edit with custom LUTS, speed ramps, and seamless invisible transitions for an urban lifestyle brand.",
     thumbnail: "https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=800&q=80",
-    videoUrl: "public/Hk video 3.mp4",
+    videoUrl: "public/hk1.mp4",
     featured: true,
     tags: ["Premiere Pro", "Color Grading", "Multi-Cam"]
   },
@@ -43,7 +43,7 @@ export const projects = [
     duration: "0:24",
     description: "Complex After Effects compositing, shape layer keyframing, 3D camera tracking, and custom particle glow dynamics.",
     thumbnail: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80",
-    videoUrl: "public/Hk video 4.mp4",
+    videoUrl: "public/hk3.mp4",
     featured: true,
     tags: ["After Effects", "3D Camera", "VFX"]
   },
