@@ -43,7 +43,7 @@ export const projects = [
     duration: "0:24",
     description: "Complex After Effects compositing, shape layer keyframing, 3D camera tracking, and custom particle glow dynamics.",
     thumbnail: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80",
-    videoUrl: "public/hk3.mp4",
+    videoUrl: "https://drive.google.com/file/d/1qTIt1PPs885hGe8DsyiGaVB2VCSdCl_j/view?usp=drive_link",
     featured: true,
     tags: ["After Effects", "3D Camera", "VFX"]
   },

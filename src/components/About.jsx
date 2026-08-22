@@ -9,22 +9,43 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
-          {/* Left Column: Large Heading */}
+          {/* Left Column: Editor Portrait & Large Heading */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="lg:col-span-5 space-y-4"
+            className="lg:col-span-5 space-y-6"
           >
-            <span className="text-xs font-mono text-brand-amber tracking-[0.25em] uppercase font-bold">
-              BEHIND THE TIMELINE
-            </span>
-            <h2 className="text-4xl sm:text-6xl font-black font-display text-white leading-tight">
-              ABOUT <br />
-              <span className="text-brand-amber">THE EDITOR</span>
-            </h2>
-            <div className="w-20 h-1.5 bg-gradient-to-r from-brand-amber to-transparent rounded-full mt-2" />
+            {/* Editor Portrait Card */}
+            <div className="relative rounded-2xl bg-dark-card border border-dark-border p-3 shadow-2xl overflow-hidden group">
+              <div className="relative aspect-[4/5] rounded-xl overflow-hidden bg-dark-surface">
+                <img
+                  src={personalInfo.photo}
+                  alt="Mohammad Saad - Freelance Video Editor"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between font-mono text-xs">
+                  <div>
+                    <div className="text-white font-bold font-sans text-lg">{personalInfo.name}</div>
+                    <div className="text-brand-amber text-xs">{personalInfo.title}</div>
+                  </div>
+                  <span className="px-2.5 py-1 rounded bg-brand-amber/90 text-black text-[10px] font-bold">
+                    PRO EDITOR
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-2">
+              <span className="text-xs font-mono text-brand-amber tracking-[0.25em] uppercase font-bold">
+                BEHIND THE TIMELINE
+              </span>
+              <h2 className="text-3xl sm:text-5xl font-black font-display text-white leading-tight">
+                ABOUT <span className="text-brand-amber">THE EDITOR</span>
+              </h2>
+            </div>
           </motion.div>
 
           {/* Right Column: Bio & Stats Grid */}

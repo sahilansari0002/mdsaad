@@ -2,6 +2,7 @@ export const personalInfo = {
   name: "Mohammad Saad",
   title: "Freelance Video Editor",
   eyebrow: "FREELANCE VIDEO EDITOR",
+  photo: "/mohammad-saad.png",
   heroHeadline: ["I EDIT STORIES", "THAT PEOPLE", "DON’T SKIP."],
   heroSubheadline: "Turning raw footage into engaging, scroll-stopping visual experiences.",
   experienceYears: "2+",
@@ -21,7 +22,7 @@ export const personalInfo = {
     email: "mosaadbusiness01@gmail.com",
     instagram: "https://instagram.com/mohammadsaad.edits",
     linkedin: "https://linkedin.com/in/mohammadsaad-editor",
-    whatsapp: "https://wa.me/+919156138370 ",
+    whatsapp: "https://wa.me/+919156138370",
     web3formsAccessKey: "07befc8c-c944-4864-8837-fdab4de96183", // Replace with actual Web3Forms Key or set VITE_WEB3FORMS_ACCESS_KEY in .env
     gaMeasurementId: "G-XXXXXXXXXX" // Replace with actual Google Analytics Measurement ID or set VITE_GA_MEASUREMENT_ID in .env
   }
