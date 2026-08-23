@@ -20,8 +20,8 @@ export const personalInfo = {
 
   contact: {
     email: "mosaadbusiness01@gmail.com",
-    instagram: "https://instagram.com/mohammadsaad.edits",
-    linkedin: "https://linkedin.com/in/mohammadsaad-editor",
+    instagram: "https://www.instagram.com/real.mohammadsaad",
+    linkedin: "https://www.linkedin.com/in/mohammad-saad-5a05422ba",
     whatsapp: "https://wa.me/+919156138370",
     web3formsAccessKey: "07befc8c-c944-4864-8837-fdab4de96183", // Replace with actual Web3Forms Key or set VITE_WEB3FORMS_ACCESS_KEY in .env
     gaMeasurementId: "G-YS9F1VJSJV" // Replace with actual Google Analytics Measurement ID or set VITE_GA_MEASUREMENT_ID in .env

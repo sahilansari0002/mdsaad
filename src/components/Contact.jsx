@@ -142,7 +142,7 @@ export default function Contact() {
                   <InstagramIcon className="w-5 h-5 text-pink-500 flex-shrink-0" />
                   <div>
                     <div className="text-[10px] text-dark-muted uppercase">Instagram</div>
-                    <div className="font-bold">@mohammadsaad.edits</div>
+                    <div className="font-bold">@real.mohammadsaad</div>
                   </div>
                 </a>
 

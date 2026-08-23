@@ -46,7 +46,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://youtube.com"
+              href="https://youtube.com/@saadwithpurpose?si=-9LOICXhm5_twawy"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2.5 rounded-xl bg-dark-card border border-dark-border hover:border-brand-amber text-white hover:text-brand-amber transition-colors"
