@@ -18,7 +18,7 @@ export const projects = [
     aspectRatio: "9:16", // vertical
     duration: "0:38",
     description: "Fast cuts, sound design sync, kinetic text animation, and color grading tuned for high audience retention. Supports Google Drive video links directly!",
-    thumbnail: "public/one.jpg",
+    thumbnail: "/one.jpg",
     // Google Drive video link provided by user
     videoUrl: "https://drive.google.com/file/d/1qTIt1PPs885hGe8DsyiGaVB2VCSdCl_j/view?usp=drive_link",
     featured: true,
@@ -67,7 +67,7 @@ export const projects = [
     aspectRatio: "9:16",
     duration: "2:40",
     description: "Pacing-focused documentary edit with archival footage matching, audio ducking, subtitle styling, and emotional narrative arc.",
-    thumbnail: "public/five.jpg",
+    thumbnail: "/five.jpg",
     videoUrl: "https://drive.google.com/file/d/1srYry9RT9EmUoq2w9RbvpekAdKbjygVk/view?usp=drive_link",
     featured: false,
     tags: ["Premiere Pro", "Documentary", "Audio Ducking"]
@@ -79,7 +79,7 @@ export const projects = [
     aspectRatio: "9:16",
     duration: "0:29",
     description: "Rhythm-matched bass drop edits, flash transitions, speed ramping, and dramatic audio mixing for max energy.",
-    thumbnail: "public/six.jpg",
+    thumbnail: "/six.jpg",
     videoUrl: "https://drive.google.com/file/d/1Kg9ZkiYuzck3_DdwWUPwLlXIZUntk6Qi/view?usp=drive_link",
     featured: false,
     tags: ["CapCut", "Speed Ramps", "High Energy"]
