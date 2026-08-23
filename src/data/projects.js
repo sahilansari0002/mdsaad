@@ -31,7 +31,7 @@ export const projects = [
     aspectRatio: "9:16", // landscape
     duration: "1:15",
     description: "Multi-cam timeline edit with custom LUTS, speed ramps, and seamless invisible transitions for an urban lifestyle brand.",
-    thumbnail: "public/two.jpg",
+    thumbnail: "/two.jpg",
     videoUrl: "https://drive.google.com/file/d/1CNCx_nGiOFNXONDrbifQl8W9VXD1fTOE/view?usp=drive_link",
     featured: true,
     tags: ["Premiere Pro", "Color Grading", "Multi-Cam"]
@@ -43,7 +43,7 @@ export const projects = [
     aspectRatio: "9:16",
     duration: "0:24",
     description: "Complex After Effects compositing, shape layer keyframing, 3D camera tracking, and custom particle glow dynamics.",
-    thumbnail: "public/three.jpg",
+    thumbnail: "/three.jpg",
     videoUrl: "https://drive.google.com/file/d/1vYc3tcuWshY7JczlFDm4-ee9jSKnzbmU/view?usp=drive_link",
     featured: true,
     tags: ["After Effects", "3D Camera", "VFX"]
@@ -55,7 +55,7 @@ export const projects = [
     aspectRatio: "9:16",
     duration: "0:45",
     description: "Engaging talking-head editing style with pop-up graphics, sound effects, B-roll overlays, and zoom punches.",
-    thumbnail: "public/four.jpg",
+    thumbnail: "/four.jpg",
     videoUrl: "https://drive.google.com/file/d/1BwcxNnfwH6-izangWE9qSNVurghdhu8c/view?usp=drive_link",
     featured: false,
     tags: ["CapCut", "Talking Head", "Pop-ups"]
@@ -91,7 +91,7 @@ export const projects = [
     aspectRatio: "9:16", // square
     duration: "0:50",
     description: "Clean product callouts, animated text highlights, macro shot stabilization, and sleek minimal aesthetics.",
-    thumbnail: "public/seven.jpg",
+    thumbnail: "/seven.jpg",
     videoUrl: "https://drive.google.com/file/d/1C5aXtnXttLFSffD2zFORuXdc6JdhDOpB/view?usp=drive_link",
     featured: false,
     tags: ["After Effects", "Product Edit", "Square Format"]
@@ -103,7 +103,7 @@ export const projects = [
     aspectRatio: "9:16",
     duration: "0:58",
     description: "Dual-speaker layout framing, wave-form visualizations, subtitle captions, and key point highlight markers.",
-    thumbnail: "public/three.jpg",
+    thumbnail: "/three.jpg",
     videoUrl: "https://drive.google.com/file/d/1qbtj1lHhcyDXyzNwczSr-r4jdHqreHni/view?usp=drive_link",
     featured: false,
     tags: ["Premiere Pro", "Subtitles", "Podcast"]
@@ -115,7 +115,7 @@ export const projects = [
     aspectRatio: "9:16",
     duration: "0:30",
     description: "Stylized typography animation synced frame-by-frame to fast voiceover track with liquid motion transitions.",
-    thumbnail: "public/two.jpg",
+    thumbnail: "/two.jpg",
     videoUrl: "https://drive.google.com/file/d/1uHu4dsYdBeoSfZQh3HEKUskXV-f59xMQ/view?usp=drive_link",
     featured: false,
     tags: ["After Effects", "Kinetic Type", "Sync"]
@@ -127,7 +127,7 @@ export const projects = [
     aspectRatio: "9:16",
     duration: "1:20",
     description: "Frame blending, velocity editing, screen shake FX, killfeed syncs, and custom glowing impact overlays.",
-    thumbnail: "public/one.jpg",
+    thumbnail: "/one.jpg",
     videoUrl: "https://drive.google.com/file/d/1mrIf66nnd_fewF6vhxdS6QiSY9pPr2EH/view?usp=drive_link",
     featured: false,
     tags: ["After Effects", "Velocity", "VFX Highlights"]
@@ -139,7 +139,7 @@ export const projects = [
     aspectRatio: "9:16",
     duration: "0:35",
     description: "Soft grain texture, film burn overlays, warm color palette, and rhythmic jump cuts for a premium boutique brand.",
-    thumbnail: "public/four.jpg",
+    thumbnail: "/four.jpg",
     videoUrl: "https://drive.google.com/file/d/1mrIf66nnd_fewF6vhxdS6QiSY9pPr2EH/view?usp=drive_link",
     featured: false,
     tags: ["CapCut", "Film Grain", "Aesthetic"]
@@ -151,7 +151,7 @@ export const projects = [
     aspectRatio: "9:16",
     duration: "1:45",
     description: "Comprehensive event coverage edit with speech audio integration, ambient background music, and crowd engagement shots.",
-    thumbnail: "public/six.jpg",
+    thumbnail: "/six.jpg",
     videoUrl: "https://drive.google.com/file/d/1mrIf66nnd_fewF6vhxdS6QiSY9pPr2EH/view?usp=drive_link",
     featured: false,
     tags: ["Premiere Pro", "Aftermovie", "Audio Mix"]
