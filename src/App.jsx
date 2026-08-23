@@ -15,6 +15,7 @@ import Services from './components/Services';
 import CTA from './components/CTA';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import WhatsAppPill from './components/WhatsAppPill';
 
 export default function App() {
   const [loadingComplete, setLoadingComplete] = useState(false);
@@ -43,6 +44,9 @@ export default function App() {
               <Contact />
             </main>
             <Footer />
+
+            {/* Quick WhatsApp Action Pill */}
+            <WhatsAppPill />
 
             {/* Video Modal Lightbox */}
             <VideoLightbox />
