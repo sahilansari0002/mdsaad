@@ -10,7 +10,7 @@ export default function Contact() {
     name: '',
     email: '',
     projectType: 'Reels / Short-Form',
-    budget: '₹15,000 - ₹35,000',
+    budget: 'Advance (700 - 1,000)',
     message: ''
   });
 
@@ -80,7 +80,7 @@ export default function Contact() {
         name: '',
         email: '',
         projectType: 'Reels / Short-Form',
-        budget: '₹15,000 - ₹35,000',
+        budget: 'Advance (700 - 1,000)',
         message: ''
       });
     }, 1500);
@@ -225,18 +225,16 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-mono text-white/80 uppercase mb-2">Estimated Budget (INR ₹)</label>
+                  <label className="block text-xs font-mono text-white/80 uppercase mb-2">Estimated Budget</label>
                   <select
                     name="budget"
                     value={formData.budget}
                     onChange={handleChange}
                     className="w-full bg-dark-bg border border-dark-border rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-amber transition-colors font-mono"
                   >
-                    <option value="Under ₹5,000">Under ₹5,000</option>
-                    <option value="₹5,000 - ₹15,000">₹5,000 - ₹15,000</option>
-                    <option value="₹15,000 - ₹35,000">₹15,000 - ₹35,000</option>
-                    <option value="₹35,000 - ₹75,000">₹35,000 - ₹75,000</option>
-                    <option value="₹75,000+">₹75,000+</option>
+                    <option value="Basic (300 - 500)">Basic Tier (300 - 500)</option>
+                    <option value="Advance (700 - 1,000)">Advance Tier (700 - 1,000)</option>
+                    <option value="Premium (1,000 - 1,500+)">Premium Tier (1,000 - 1,500+)</option>
                   </select>
                 </div>
               </div>
